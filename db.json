@@ -1,0 +1,57 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "somethings broken you fool",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Samual Smithers"
+    },
+    {
+      "id": 2,
+      "message": "somethings else is broken you damned peanut brain",
+      "attention": false,
+      "date": "11-02-2019",
+      "tech": "Saul Good"
+    },
+    {
+      "id": 3,
+      "message": "You take me for a fool you fool, get your haircut fool",
+      "attention": true,
+      "date": "13-02-2019",
+      "tech": "Mister Tea"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Saul",
+      "lastName": "Good",
+      "position": "Senior Engineer"
+    },
+    {
+      "id": 2,
+      "firstName": "Samual",
+      "lastName": "Smithers",
+      "position": "Engineer"
+    },
+    {
+      "id": 3,
+      "firstName": "Mister",
+      "lastName": "Tea",
+      "position": "The Engineer"
+    },
+    {
+      "firstName": "Richie",
+      "lastName": "Redizm",
+      "position": "Super Engineer",
+      "id": 4
+    },
+    {
+      "firstName": "Testy",
+      "lastName": "McTester",
+      "position": "Test Engineer",
+      "id": 5
+    }
+  ]
+}
