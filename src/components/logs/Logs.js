@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import LogItem from './LogItem'
 
 const Logs = () => {
   const [logs, setLogs] = useState([])
@@ -6,6 +7,7 @@ const Logs = () => {
 
   useEffect(() => {
     getLogs()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const getLogs = async () => {
@@ -22,15 +24,15 @@ const Logs = () => {
   }
 
   return (
-    <ul className='collection-with-header'>
+    <ul className='collection with-header'>
       <li className='collection-header'>
         <h4>System Logs</h4>
-        {!loading && logs.length === 0 ? (
-          <p className='center'>No Logs</p>
-        ) : (
-          logs.map((log, i) => console.log('log', log))
-        )}
       </li>
+      {!loading && logs.length === 0 ? (
+        <p className='center'>No Logs</p>
+      ) : (
+        logs.map((log, i) => <LogItem log={log} />)
+      )}
     </ul>
   )
 }
