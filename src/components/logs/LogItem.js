@@ -10,13 +10,12 @@ const LogItem = ({ log }) => {
           href='#edit-log-model'
           className={`modal-trigger ${
             log.attention ? 'red-text' : 'blue-text'
-          }`}
-        >
+          }`}>
+          <span className='black-text'>#{log.id} </span>
           {log.message}
         </a>
         <br />
         <span className='grey-text'>
-          <span className='black-text'>#{log.id} </span>
           Last update by
           <span className='black-text'> {log.tech} </span>on{' '}
           <Moment format='Do MMMM YYYY, h:mm:ss a'>{log.date}</Moment>
