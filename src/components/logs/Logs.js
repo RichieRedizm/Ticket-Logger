@@ -32,7 +32,7 @@ const Logs = () => {
       {!loading && logs.length === 0 ? (
         <p className='center'>No Logs</p>
       ) : (
-        logs.map((log, i) => <LogItem log={log} />)
+        logs.map(log => <LogItem key={log.id} log={log} />)
       )}
     </ul>
   )

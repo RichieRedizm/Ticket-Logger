@@ -14,12 +14,11 @@ const LogModal = ({
     <Fragment>
       <div className='modal-content'>
         <h4>{title}</h4>
-
         <div className='row'>
           <div className='input-field'>
             <input
               type='text'
-              className='text'
+              name='message'
               value={message}
               onChange={e => setMessage(e.target.value)}
             />

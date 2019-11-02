@@ -1,3 +1,11 @@
 .nav-wrapper {
   margin: 0 0 30px 0;
 }
+
+.modal.large {
+  width: 75%;
+  height: 65%;
+}
+.modal.small {
+  width: 50%;
+}
